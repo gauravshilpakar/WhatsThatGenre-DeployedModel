@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
+@import url('./Fonts/SF-Pro-Display-Regular.otf');
+body{
+    font-family: "IBM Plex Sans"; 
+    background-color: black;
+	min-height: 100vh;
+}
+.mfcc_output{
+    height: 400px;
+    margin: 20px
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+    text-decoration: inherit;
+    vertical-align: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: relative;
+    background-color: #5f5f5f;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+nav a:hover {
+    background-color: black;
+    color: white
+}
+
+
+nav a {
+    display: block;
+    color: white;
+    padding: 20px 20px;
+    /* margin: 0px 40px; */
+    text-decoration: none;
+    float: left;
+}
+
+.back {
+    color: white;
+}
+
+
+/* .content {
+     font-family: "SF Pro Display";
+     display: grid;
+    flex-direction: column;
+    min-height: 100vh;
+ } */
+
+
+.logo {
+    display: block;
+    padding: 64px 16px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 300%;
+}
+
+.logo H1{
+	text-transform: uppercase;
+	letter-spacing: .2em;
+}
+
+.mainblock{
+	height: auto;
+	margin-left: 2em;
+	margin-right: 2em;
+	place-content: center;
+	justify-content: center;
+	border-style: solid;
+	border-color: goldenrod;
+}
+
+
+.main-content>div {
+    text-align: center;
+}
+
+/* .column1{
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.column3{
+    grid-column-start: 1;
+    grid-row-start: 2;
+} */
+
+input {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+button {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    /* color: #FFFFFF; */
+    text-align: center;
+    transition: all 0.2s;
+}
+
+button:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+/* button:active{
+
+} */
+
+@media all and (max-width:30em) {
+    button {
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+
+.search {
+    float: right;
+    padding: 10px 4px;
+}
+
+.recorder {
+    flex-grow: 40;
+}
+
+.youtube {
+    float: center;
+    margin: 100px 550px;
+}
+
+/* footer {
+    background: #5f5f5f;
+    margin-top: 0px;
+    padding: 6px 0;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+} */
+
+footer{
+	background-color: none;
+	text-align: center;
+    
+	margin-top: -50px;
+    width: 100%;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+text-decoration: underline;
+}
+
+
+a{
+	text-decoration: none;
+    display: inline-block;
+    padding: 0px 1px;
+    transition: all .5s ease-in-out;
+    box-sizing: border-box;
+    box-shadow: inset 0 -2px 0 #007FFF;
+}
+a:hover{
+	text-decoration: none;
+	box-shadow: inset 0 -55px 0 0 #007FFF;
+	color: white;
+}
+
+.ytlink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 20px 0 20px;
+	color: white;
+}
+
+.linkprovider {
+    font-size: 40px;
+    text-transform: uppercase;
+	
+	color: white;
+}
+.button1 {
+    margin-top: 40px;
+
+    font-size: 20px;
+    font-family: 'IBM Plex Sans';
+    background: none;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+    border-color: goldenrod;
+    cursor: pointer;
+    
+
+	text-decoration: none;
+	color: goldenrod;
+	display: inline-block;
+	padding: 0px 1px;
+	transition: all .5s ease-in-out;
+	box-sizing: border-box;
+	box-shadow: inset 0 -2px 0 goldenrod;
+	padding: 10px 20px 10px 20px;
+
+}
+
+.button1:hover {
+    background-color: goldenrod;
+    color: aliceblue;
+	text-decoration: none;
+box-shadow: inset 0 -55px 0 0 goldenrod;
+/* color: white; */
+
+}
+
+.linkplaceholder {
+    width: 400px;
+	text-align: center;
+}
+
+iframe{
+	border: 0;
+    height: 400px;
+    width: -webkit-fill-available;
+}
+
+@media all and (max-width:30em) {
+    .button1 {
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+
+div.info {
+    font-size: 20px;
+	margin-top: 80px;
+	color: white;
+}
+
+input[type="text"]::placeholder {
+
+    /* Firefox, Chrome, Opera */
+    text-align: center;
+}

@@ -1,0 +1,30 @@
+{% extends "header.html" %}
+{% block title %}YouTube{% endblock %}
+{% block content %}
+<div class="mainblock">
+	<form action="#" method="POST">
+		<div class="ytlink">
+			Enter YouTube video link below.
+			<div class="linkprovider">Link</div>
+			<input type="text" name="nm" placeholder="YouTube Video Link" class="linkplaceholder" />
+			<div> <input type="submit" value="SUBMIT" class="button1" /> </div>
+		</div>
+	</form>
+
+	<div class="info flex-shrink-0">
+		{% with messages = get_flashed_messages() %}
+		{% if messages %}
+		{% for m in messages %}
+		<p>{{m}}</p>
+		{% endfor %}
+		{% endif %}
+		{% endwith %}
+		<img class="mfcc_output" src="{{url_for('static',filename= mfcc_link)}}" alt="" srcset="">
+		<img class="mfcc_output" src="{{url_for('static',filename= prediction_link)}}" alt="" srcset="">
+	</div>
+	{{ embedcode }}
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'header.html' %}
+
+{% block header %}
+<h1> {% block title %} 404:Error Page not found {% endblock %} </h1>
+{% endblock %}
+
+{% block content %}
+
+<body>
+
+
+    <p> {{errorMessage}}</p>
+    <script src="{{url_for('static',filename= 'scripts.js')}}"> </script>
+</body>
+
+{% endblock %}
